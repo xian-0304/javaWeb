@@ -22,7 +22,7 @@ public class SelectAllServlet extends HttpServlet {
         //2. 将集合转换为JSON数据   序列化
         String jsonString = JSON.toJSONString(brands);
 
-        //3. 响应数据
+        //3. 响应数据 "text/json;
         response.setContentType("text/json;charset=utf-8");
         response.getWriter().write(jsonString);
     }
